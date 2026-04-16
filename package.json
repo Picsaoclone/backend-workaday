@@ -1,0 +1,48 @@
+{
+  "name": "workaday-backend",
+  "version": "1.0.0",
+  "description": "Workaday Backend API - Express + MongoDB",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "agora-token": "^2.0.4",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.2.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "expo-server-sdk": "^3.12.0",
+    "express": "^4.18.3",
+    "express-rate-limit": "^7.2.0",
+    "express-validator": "^7.1.0",
+    "firebase-admin": "^12.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.4",
+    "morgan": "^1.10.0",
+    "multer": "^2.1.1",
+    "nodemailer": "^8.0.2",
+    "socket.io": "^4.7.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^20.12.7",
+    "@types/nodemailer": "^7.0.11",
+    "@types/uuid": "^9.0.8",
+    "socket.io-client": "^4.8.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}
