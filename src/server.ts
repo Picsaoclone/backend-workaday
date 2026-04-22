@@ -7,6 +7,8 @@ import dotenv from "dotenv";
 
 import { connectDatabase } from "./config/database";
 import { errorHandler } from "./middleware/errorHandler";
+import authRoutes from "./routes/auth.routes";
+import userRoutes from "./routes/user.routes";
 
 dotenv.config();
 
@@ -60,6 +62,10 @@ app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.get("/api/health", (_req, res) => {
   res.json({ status: "ok", message: "Workaday API đang hoạt động 🚀", timestamp: new Date() });
 });
+
+// Routes
+app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
 
 // Error handler (phải đặt cuối)
 app.use(errorHandler);
