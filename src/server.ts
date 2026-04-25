@@ -9,6 +9,8 @@ import { connectDatabase } from "./config/database";
 import { errorHandler } from "./middleware/errorHandler";
 import authRoutes from "./routes/auth.routes";
 import userRoutes from "./routes/user.routes";
+import notificationRoutes from "./routes/notification.routes";
+import pushTokenRoutes from "./routes/pushToken.routes";
 
 dotenv.config();
 
@@ -66,6 +68,8 @@ app.get("/api/health", (_req, res) => {
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/notifications", notificationRoutes);
+app.use("/api/push-tokens", pushTokenRoutes);
 
 // Error handler (phải đặt cuối)
 app.use(errorHandler);
