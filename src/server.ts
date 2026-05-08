@@ -14,6 +14,7 @@ import pushTokenRoutes from "./routes/pushToken.routes";
 import messageRoutes from "./routes/message.routes";
 import channelRoutes from "./routes/channel.routes";
 import attendanceRoutes from "./routes/attendance.routes";
+import leaveRoutes from "./routes/leave.routes";
 
 dotenv.config();
 
@@ -76,6 +77,7 @@ app.use("/api/push-tokens", pushTokenRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/channels", channelRoutes);
 app.use("/api/attendance", attendanceRoutes);
+app.use("/api/leave", leaveRoutes);
 
 // Error handler (phải đặt cuối)
 app.use(errorHandler);
