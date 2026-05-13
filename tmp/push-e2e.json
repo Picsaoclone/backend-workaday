@@ -1,0 +1,16 @@
+{
+  "createdAt": "2026-03-29T09:26:59.631Z",
+  "baseUrl": "http://localhost:5000/api",
+  "password": "Password123!",
+  "admin": {
+    "email": "push_admin_473832751@example.com",
+    "id": "69c8f06119ae5480669eca44",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzhmMDYxMTlhZTU0ODA2NjllY2E0NCIsImVtYWlsIjoicHVzaF9hZG1pbl80NzM4MzI3NTFAZXhhbXBsZS5jb20iLCJyb2xlIjoiYWRtaW4iLCJjb21wYW55SWQiOiI2OWM4ZjA2MjE5YWU1NDgwNjY5ZWNhNDgiLCJpYXQiOjE3NzQ3NzY0MTgsImV4cCI6MTc3NTM4MTIxOH0.uUkRGMOvBBxrsKdZxyYj-fUzd7CnJjJPBsZJiRHCe0M"
+  },
+  "employee": {
+    "email": "push_emp_473832751@example.com",
+    "id": "69c8f06319ae5480669eca59"
+  },
+  "companyId": "69c8f06219ae5480669eca48",
+  "inviteCode": "PUSH-TBHN"
+}
